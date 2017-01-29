@@ -9,3 +9,5 @@ Homestead.yaml
 .env.php
 .DS_Store
 Thumb.db
+*.lock
+php-getting-started
