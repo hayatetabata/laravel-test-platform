@@ -8,4 +8,9 @@ class ReportController
     {
         return view('csv.download');
     }
+
+    public function download()
+    {
+        return view('hello'); 
+    }
 }

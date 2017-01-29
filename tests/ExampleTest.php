@@ -3,17 +3,16 @@
 use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use App\Models\Reporter;
 
 class ExampleTest extends TestCase
 {
-    /**
-     * A basic functional test example.
-     *
-     * @return void
-     */
     public function testBasicExample()
     {
-        $this->visit('/')
-             ->see('Laravel');
+        $reportObj = new Reporter();
+        $files = $reportObj->getConvertedData();
+        $csvFileHeaders = $reportObj->getCsvFileHeaders();
+
+        $this->assertEquals($files[0]['name'], 'tamura');
     }
 }
