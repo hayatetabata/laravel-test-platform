@@ -31,6 +31,7 @@ class Reporter
     public function putCsvToStorage()
     {
         $header = $this->csvFileHeaders;
+        $files = $this->files;
 
         $content = fopen('php://temp', 'w');
         fputcsv($content, $header);
@@ -38,8 +39,11 @@ class Reporter
             fputcsv($content, $file);
         }
         rewind($content);
+        $filename = sprintf('converted/%d/.csv', date("Y/m/d H:i:s"));
 
-        Storage::put(sprintf('converted/%d/', date("Y/m/d H:i:s")), $content);
+        Storage::put($filename, $content);
+        fclose($content);
+        return $filename;
     }
 
     public function getPathToCsvFile()

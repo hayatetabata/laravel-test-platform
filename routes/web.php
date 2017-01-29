@@ -23,3 +23,4 @@ Route::get('/foo/{name}','lists\FooController@index');
 Route::get('/foo','Lists\FooController@index');
 
 Route::get('/report','ReportController@index');
+Route::post('/download', 'ReportController@download');
