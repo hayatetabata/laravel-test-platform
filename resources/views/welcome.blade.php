@@ -83,6 +83,7 @@
                 </div>
                 <div id="example"></div>
                 <div id="root"></div>
+                <div id="welcome"></div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
