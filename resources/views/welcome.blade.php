@@ -81,6 +81,8 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
+                <div id="example"></div>
+                <div id="root"></div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
@@ -90,6 +92,9 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
+        <div id="timer"></div>
         </div>
+        <script src="{{ elixir('js/app.js') }}"></script>
+        <script src="{{ elixir('js/testJsx.js') }}"></script>
     </body>
 </html>
