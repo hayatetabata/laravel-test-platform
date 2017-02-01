@@ -82,6 +82,7 @@
                     Laravel
                 </div>
                 <div id="example"></div>
+                <div id="root"></div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
@@ -93,5 +94,6 @@
             </div>
         </div>
         <script src="{{ elixir('js/app.js') }}"></script>
+        <script src="{{ elixir('js/testJsx.js') }}"></script>
     </body>
 </html>
