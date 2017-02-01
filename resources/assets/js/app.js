@@ -18,3 +18,11 @@ Vue.component('example', require('./components/Example.vue'));
 const app = new Vue({
     el: '#app'
 });
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+    <h1>Hello, world!</h1>,
+    document.getElementById('example')
+);

@@ -81,6 +81,7 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
+                <div id="example"></div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
@@ -91,5 +92,6 @@
                 </div>
             </div>
         </div>
+        <script src="{{ elixir('js/app.js') }}"></script>
     </body>
 </html>
