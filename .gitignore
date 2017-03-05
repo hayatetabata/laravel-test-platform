@@ -11,3 +11,5 @@ Homestead.yaml
 Thumb.db
 *.lock
 php-getting-started
+serve_for_vagrant.sh
+*.swp
