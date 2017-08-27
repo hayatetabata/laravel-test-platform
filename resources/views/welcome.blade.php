@@ -95,7 +95,6 @@
             </div>
         <div id="timer"></div>
         </div>
-        <script src="{{ elixir('js/app.js') }}"></script>
-        <script src="{{ elixir('js/testJsx.js') }}"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
