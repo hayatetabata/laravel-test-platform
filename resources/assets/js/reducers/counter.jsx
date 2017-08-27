@@ -1,8 +1,9 @@
 import { INCREMENT, DECREMENT } from '../constants/ActionTypes'
 
-const initialState = [
+const initialState = {
     value: 0
-]
+}
+
 
 export default function counter(state = initialState, action) {
     switch (action.type) {
